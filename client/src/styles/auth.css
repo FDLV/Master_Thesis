@@ -1,0 +1,96 @@
+.box {
+  width: 400px;
+  background: #ede0d4;
+  margin: 115px auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.boxName {
+  height: 30px;
+  width: inherit;
+  color: rgb(54, 54, 54);
+  font-size: 28px;
+  padding-bottom: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: bold;
+}
+
+.boxContent {
+  width: 360px;
+  background: #e7d6c5;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.boxInput {
+  width: 310px;
+  height: 20px;
+  font-size: 20px;
+  padding: 7px 21px;
+  border: 1px solid #d2d8d8;
+  border-radius: 5px;
+}
+
+#login,
+#password {
+  margin-bottom: 20px;
+}
+
+.boxButton {
+  width: 115px;
+  height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+  outline: none;
+  font-size: 20px;
+  border: 1px solid #b2967d;
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.boxButton:hover {
+  background: #f8f3f2;
+}
+
+@media (max-width: 475px) {
+  .box {
+    width: auto;
+    background: #ede0d4;
+    margin: 115px 20px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .boxName {
+    height: 8vw;
+    width: inherit;
+    color: rgb(54, 54, 54);
+    font-size: 7vw;
+    padding-bottom: 15px;
+  }
+
+  .boxContent {
+    overflow: hidden;
+    width: inherit;
+    background: #e7d6c5;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .boxInput {
+    width: calc(100% - 45px);
+    height: 20px;
+    font-size: 16px;
+    padding: 7px 21px;
+    border: 1px solid #d2d8d8;
+    border-radius: 5px;
+  }
+}

@@ -3,13 +3,11 @@ const TableBodyDeleteMode = (props) => {
 
   return (
     <tbody>
-      {data.map((row, row_key) => (
-        <tr key={row_key}>
-          {row.values.map((cell, cell_key) => (
-            <th key={cell_key}>{cell}</th>
-          ))}
-        </tr>
-      ))}
+      <tr>
+        <th>delete 1</th>
+        <th>delete 3</th>
+        <th>delete 3</th>
+      </tr>
     </tbody>
   );
 };

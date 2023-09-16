@@ -20,27 +20,27 @@ const Tasks = () => {
   ];
 
   const data = [
-    { id: 993, values: ["q", "ddd", "fgh"], redirect_to: "description" },
-    { id: 122323, values: ["gfh", "asdd", "nfgh"], redirect_to: "description" },
-    { id: 1533, values: ["fq", "aaddd", "lfgh"], redirect_to: "description" },
-    { id: 1534453, values: ["fq", "nddd", "afgh"], redirect_to: "description" },
+    { id: 0, values: ["q", "ddd", "fgh"] },
+    { id: 1, values: ["gfh", "asdd", "nfgh"] },
+    { id: 2, values: ["fq", "aaddd", "lfgh"] },
+    { id: 3, values: ["fq", "nddd", "afgh"] },
   ];
 
   const buttons_data = [
-    { id: 0, tooltip: "Создать", type: "create", action: "" },
+    { id: 1, tooltip: "Создать", type: "create", action: "" },
     { id: 1, tooltip: "Редактировать", type: "edit", action: "" },
-    { id: 2, tooltip: "Удалить", type: "delete", action: "" },
+    { id: 0, tooltip: "Удалить", type: "delete", action: "" },
   ];
 
-  useEffect(() => {
-    // проверка токена
-    if (token !== null) navigate("/tasks");
-  }, []);
+  // useEffect(() => {
+  //   // проверка токена
+  //   if (token !== null) navigate("/tasks");
+  // }, []);
 
   return (
     <div>
-      <ActionTitle title="Задания" buttons={buttons_data} />
-      <Table titles={titles} mode="read" data={data} />
+      <ActionTitle title="Описания заданий" buttons={buttons_data} />
+      <Table titles={titles} mode="delete" data={data} />
     </div>
   );
 };
