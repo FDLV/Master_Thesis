@@ -1,0 +1,27 @@
+.action-title__wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 26px;
+  align-items: center;
+  padding: 24px 24px 0;
+}
+
+.action-title__text {
+  font-size: 26px;
+}
+
+.action-title__btns {
+  display: flex;
+  flex-direction: row;
+  column-gap: 14px;
+}
+
+.action-title__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

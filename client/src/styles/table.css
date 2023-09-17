@@ -1,0 +1,45 @@
+.table__wrapper {
+  padding: 24px;
+}
+
+.table__main {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.table__main thead th {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+  border: none;
+  padding: 10px 15px;
+  background: #ede0d4;
+}
+
+.table__main thead tr th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+.table__main thead tr th:last-child {
+  border-radius: 0 8px 0 0;
+}
+
+.table__main tbody tr th {
+  text-align: left;
+  border: none;
+  padding: 10px 15px;
+  vertical-align: middle;
+}
+
+.table__main tbody tr:nth-child(even) {
+  background: #f3eae2;
+}
+
+.table__main tbody tr:hover {
+  background: #e6beae;
+  cursor: pointer;
+}

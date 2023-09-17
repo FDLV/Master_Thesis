@@ -1,0 +1,141 @@
+.main {
+  background: #ecf8f8;
+}
+
+.PageTitle {
+  padding: 38px 20px 0 20px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: rgb(54, 54, 54);
+}
+
+.Content {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: rgb(54, 54, 54);
+}
+
+.Text {
+  padding: 18px 20px;
+  line-height: 150%;
+  margin: 20px;
+  font-size: 28px;
+  border-radius: 5px;
+  text-align: justify;
+  background: #ede0d4;
+  font-family: "Montserrat Alternates", sans-serif;
+  flex: 1;
+}
+
+.AdvantagesTitle {
+  font-weight: bold;
+  font-size: 28px;
+  text-align: justify;
+  font-family: "Montserrat Alternates", sans-serif;
+  margin-top: 3px;
+}
+
+.SvgBox {
+  width: 2em;
+  height: 2em;
+}
+
+.AdvantageImage {
+  padding: 18px 0;
+  width: 2em;
+  height: 2em;
+}
+
+.Advantages {
+  padding: 18px 20px;
+  margin: 20px;
+  font-size: 28px;
+  border-radius: 5px;
+  text-align: justify;
+  background: #ede0d4;
+  font-family: "Montserrat Alternates", sans-serif;
+  flex: 2;
+}
+
+.Advantage {
+  display: flex;
+}
+
+.AdvantageText {
+  padding: 18px 20px;
+  margin: 10px;
+  font-size: 28px;
+  border-radius: 5px;
+  text-align: justify;
+  background: #ede0d4;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.block {
+  max-width: 550px;
+  padding: 18px;
+  margin: 40px;
+  text-align: justify;
+  border-radius: 5px;
+  background: #ede0d4;
+  font-size: 20px;
+  color: rgb(54, 54, 54);
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.TextBlock {
+  height: 150px;
+  padding-left: 200px;
+}
+
+.LeftBlock {
+  float: left;
+}
+
+.RightBlock {
+  float: right;
+}
+
+@media (max-width: 768px) {
+  .SvgBox {
+    display: none;
+  }
+
+  .AdvantageImage {
+    display: none;
+  }
+
+  .AdvantagesTitle {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+    font-family: "Montserrat Alternates", sans-serif;
+    margin-top: 3px;
+  }
+
+  .AdvantageText {
+    padding: 18px 0 18px 0;
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: justify;
+    background: #ede0d4;
+    font-family: "Montserrat Alternates", sans-serif;
+  }
+
+  .Text {
+    padding: 18px 20px;
+    line-height: 150%;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: justify;
+    background: #ede0d4;
+    font-family: "Montserrat Alternates", sans-serif;
+    flex: 1;
+  }
+}

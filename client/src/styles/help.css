@@ -1,0 +1,66 @@
+.main {
+  background: #f7f4f3;
+}
+
+#AuthPage {
+  float: right;
+}
+
+.PageTitleHelp {
+  padding: 38px 20px 18px 20px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: rgb(54, 54, 54);
+}
+
+.ContentHelp1 {
+  padding: 0 20px 0 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  color: rgb(54, 54, 54);
+}
+
+.ContentHelp2 {
+  padding: 20px;
+  color: rgb(54, 54, 54);
+}
+
+.TextHelp1 {
+  padding: 20px 20px;
+  margin: 20px 20px 0 20px;
+  font-size: 28px;
+  border-radius: 5px;
+  text-align: justify;
+  background: #ede0d4;
+  font-family: "Montserrat Alternates", sans-serif;
+  flex: 1;
+}
+
+.TextHelp2 {
+  padding: 18px 20px;
+  line-height: 150%;
+  margin: 20px 20px 0 20px;
+  font-size: 28px;
+  border-radius: 5px;
+  text-align: center;
+  background: #d2c0b2;
+  font-family: "Montserrat Alternates", sans-serif;
+  flex: 1;
+}
+
+.Question {
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.Question:hover {
+  background: #e6beae;
+}
+
+.Answer {
+  display: none;
+}
