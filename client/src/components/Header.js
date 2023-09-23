@@ -28,8 +28,8 @@ const Header = () => {
   if (token === null) {
     return (
       <div className="header">
-        <input className="header__input" name="chckbx" id="chckbxAuth0" type="checkbox" />
-        <label className="header__label" htmlFor="chckbxAuth0"></label>
+        <input className="header__input" name="chckbx" id="chckbxAuth" type="checkbox" />
+        <label className="header__label" htmlFor="chckbxAuth"></label>
         <ul className="header-list">
           <li className="header__item">
             <Link className="header__item-link" to={"/"}>
@@ -52,6 +52,8 @@ const Header = () => {
   } else {
     return (
       <div className="header">
+        <input className="header__input" name="chckbx" id="chckbxAuth" type="checkbox" />
+        <label className="header__label" htmlFor="chckbxAuth"></label>
         <ul className="header-list">
           <li className="header__item">
             <Link className="header__item-link" to={"/"}>

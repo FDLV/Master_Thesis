@@ -1,6 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  column-gap: 8px;
   align-items: center;
   background: #eee4e1;
   font-size: 20px;
@@ -65,6 +66,9 @@
 
 .header__user-name {
   margin-right: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -84,8 +88,8 @@
 
   .header__input + label {
     background-image: url(../img/menu.svg);
-    height: 30px;
-    width: 30px;
+    min-height: 30px;
+    min-width: 30px;
     display: block;
     cursor: pointer;
   }
