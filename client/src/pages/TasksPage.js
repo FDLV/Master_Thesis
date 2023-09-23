@@ -5,11 +5,11 @@ import { useDispatch, useSelector } from "react-redux";
 import Table from "../components/Table.js";
 import ActionTitle from "../components/ActionTitle.js";
 import "../styles/auth.css";
+import { notify } from "../store/notificationSlice.js";
 
 const Tasks = () => {
   const navigate = useNavigate();
-
-  // const [TableBody, setTableBody] = useState(null);
+  const dispatch = useDispatch();
 
   const token = useSelector((state) => state.auth.token);
 
@@ -32,6 +32,8 @@ const Tasks = () => {
     { id: 2, tooltip: "Удалить", type: "delete", action: "" },
   ];
 
+  const navigate_from_row = (redirect_to, row_id) => navigate(`/${redirect_to}/${row_id}`);
+
   useEffect(() => {
     // проверка токена
     if (token !== null) navigate("/tasks");
@@ -39,8 +41,30 @@ const Tasks = () => {
 
   return (
     <div>
+      <button
+        onClick={() =>
+          dispatch(
+            notify({ title: "Задание создано", text: "Задание успешно создано", mode: "success" })
+          )
+        }
+      >
+        зеленый
+      </button>
+      <button
+        onClick={() =>
+          dispatch(
+            notify({
+              title: "Задание не создано",
+              text: "Не удалось создать задание",
+              mode: "error",
+            })
+          )
+        }
+      >
+        красный
+      </button>
       <ActionTitle title="Задания" buttons={buttons_data} />
-      <Table titles={titles} mode="read" data={data} />
+      <Table titles={titles} mode="read" data={data} navigate_from_row={navigate_from_row} />
     </div>
   );
 };

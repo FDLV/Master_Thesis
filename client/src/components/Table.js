@@ -21,7 +21,7 @@ const Table = (props) => {
 
     const mode = modes.find((el) => el.name === props.mode);
     const ComponentByMode = mode.component;
-    setTableBody(<ComponentByMode data={props.data} />);
+    setTableBody(<ComponentByMode data={props.data} navigate_from_row={props.navigate_from_row} />);
   }, [props]);
 
   // избытычный юзэффект, при изменении пропсов будет делать лишние операции

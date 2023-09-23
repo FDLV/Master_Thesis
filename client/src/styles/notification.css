@@ -1,0 +1,64 @@
+.notification {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 425px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.notification_error-color {
+  background-color: lightcoral;
+}
+
+.notification_success-color {
+  background-color: lightgreen;
+}
+
+.notification_info-color {
+  background-color: lightgrey;
+}
+
+.notification__title-wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.notification__title {
+  font-size: 24px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.notification__btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.notification__btn:hover {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.notification__text {
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  .notification {
+    left: 15px;
+    right: 15px;
+    width: auto;
+  }
+}

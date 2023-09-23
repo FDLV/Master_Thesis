@@ -1,12 +1,11 @@
 import { useNavigate } from "react-router-dom";
 
 const TableBodyReadMode = (props) => {
-  const { data } = props;
-  const navigate = useNavigate();
+  const { data, navigate_from_row } = props;
 
   const click_row = (row) => {
     if (row.redirect_to === null || row.redirect_to === undefined) return;
-    navigate(`/${row.redirect_to}/${row.id}`);
+    navigate_from_row(row.redirect_to, row.id);
   };
 
   return (
