@@ -8,15 +8,15 @@ const Notification = (props) => {
   const [notificationColor, setNotificationColor] = useState(null);
 
   const notification_types = [
-    { mode: 'success', class: 'notification_success-color' },
-    { mode: 'error', class: 'notification_error-color' },
-    { mode: 'info', class: 'notification_info-color' },
-  ]
+    { mode: "success", class: "notification_success-color" },
+    { mode: "error", class: "notification_error-color" },
+    { mode: "info", class: "notification_info-color" },
+  ];
 
   useEffect(() => {
-    const current_mode = notification_types.find(el => el.mode === mode)
+    const current_mode = notification_types.find((el) => el.mode === mode);
     if (current_mode === undefined) setNotificationColor("notification_info-color");
-    else setNotificationColor(current_mode.class)
+    else setNotificationColor(current_mode.class);
   }, [mode]);
 
   if (isShow === true) {

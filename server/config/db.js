@@ -1,12 +1,12 @@
-const Pool = require("pg").Pool;
+import pkg from "pg";
+const { Pool } = pkg;
 
 const pool = new Pool({
-    user: "postgres",
-    password: "root",
-    host: "localhost",
-    port: 5432,
-    database: "department_tasks"
-})
+  user: "postgres",
+  password: "root",
+  host: "localhost",
+  port: 5432,
+  database: "department_tasks",
+});
 
-
-module.exports = pool;
+export default pool;

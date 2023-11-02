@@ -1,3 +1,1 @@
-module.exports = {
-    jwtkey: 'KeyForT0ken21'
-}
+export const jwtkey = "KeyForT0ken21";
